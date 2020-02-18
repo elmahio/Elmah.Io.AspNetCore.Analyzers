@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="Elmah.Io.AspNetCore.Analyzers.9debb2f6-2e0e-4c82-9a7f-3b6ad3d503cd" Version="0.2" Language="en-US" Publisher="elmahio"/>
+        <DisplayName>Elmah.Io.AspNetCore.Analyzers</DisplayName>
+        <Description xml:space="preserve">Roslyn analyzers to help install elmah.io in ASP.NET Core.</Description>
+        <License>license.txt</License>
+        <Icon>logo.png</Icon>
+        <PreviewImage>logo.png</PreviewImage>
+        <Tags>ELMAH, elmah.io, logging, cloud, errors, error tracking, error management, cloud logging, bug tracking, roslyn, analyzers</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,17.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="Elmah.Io.AspNetCore.Analyzers" Path="|Elmah.Io.AspNetCore.Analyzers|" />
+        <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="Elmah.Io.AspNetCore.Analyzers" Path="|Elmah.Io.AspNetCore.Analyzers|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,17.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0,17.0)" DisplayName="Roslyn Language Services" />
+    </Prerequisites>
+</PackageManifest>
